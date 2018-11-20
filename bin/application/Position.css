@@ -1,0 +1,17 @@
+#label_title{
+	-fx-background-color: #3a434c;
+	-fx-text-fill: white;
+	-fx-alignment: center;
+}
+
+#btn_save{
+	-fx-background-color: #0b824e;
+}
+
+.jfx-button{
+	-fx-text-fill: white;
+	-fx-opacity: 0.9;
+}
+.jfx-button:hover{
+	-fx-opacity: 1;
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane_parent" prefHeight="530.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="pane_top" prefHeight="60.0" prefWidth="899.0">
+         <children>
+            <Label fx:id="label_title" layoutX="20.0" layoutY="14.0" prefHeight="32.0" prefWidth="375.0" text="JavaFX with Jasper Report">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="anchorpane_center" layoutX="12.0" layoutY="64.0" prefHeight="459.0" prefWidth="875.0">
+         <children>
+            <AnchorPane fx:id="anchorpane_left" layoutX="14.0" layoutY="14.0" prefHeight="439.0" prefWidth="274.0">
+               <children>
+                  <JFXTextField fx:id="txt_firstname" labelFloat="true" layoutX="14.0" layoutY="80.0" prefHeight="25.0" prefWidth="244.0" promptText="Firstname" />
+                  <JFXTextField fx:id="txt_lastname" labelFloat="true" layoutX="15.0" layoutY="177.0" prefHeight="25.0" prefWidth="244.0" promptText="Lastname" />
+                  <JFXComboBox fx:id="combo_gender" labelFloat="true" layoutX="15.0" layoutY="264.0" prefHeight="25.0" prefWidth="244.0" promptText="Gender" />
+                  <JFXComboBox fx:id="combo_position" labelFloat="true" layoutX="15.0" layoutY="356.0" prefHeight="25.0" prefWidth="207.0" promptText="Position" />
+                  <JFXButton fx:id="btn_position" layoutX="229.0" layoutY="353.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_save" buttonType="RAISED" layoutX="15.0" layoutY="400.0" prefHeight="25.0" prefWidth="55.0" text="Save" />
+                  <JFXButton fx:id="btn_edit" buttonType="RAISED" layoutX="135.0" layoutY="400.0" prefHeight="25.0" prefWidth="55.0" text="Edit" />
+                  <JFXButton fx:id="btn_delete" buttonType="RAISED" layoutX="195.0" layoutY="400.0" prefHeight="25.0" prefWidth="55.0" text="Delete" />
+                  <JFXButton fx:id="btn_add_new" layoutX="75.0" layoutY="400.0" prefHeight="25.0" prefWidth="55.0" text="New" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorpane_right" layoutX="294.0" layoutY="14.0" prefHeight="439.0" prefWidth="575.0">
+               <children>
+                  <TableView fx:id="tblview" layoutX="9.0" layoutY="35.0" prefHeight="390.0" prefWidth="558.0">
+                    <columns>
+                      <TableColumn fx:id="column_firstname" prefWidth="150.0" text="Firstname" />
+                      <TableColumn fx:id="column_lastname" prefWidth="174.0" text="Lastname" />
+                        <TableColumn fx:id="column_gender" prefWidth="91.0" text="Gender" />
+                        <TableColumn fx:id="column_position" prefWidth="145.0" text="Position" />
+                        <TableColumn fx:id="column_ID" prefWidth="11.0" text="ID_hidden" visible="false" />
+                    </columns>
+                  </TableView>
+                  <JFXButton fx:id="btn_print_preview" buttonType="RAISED" layoutX="445.0" layoutY="5.0" prefHeight="25.0" prefWidth="122.0" text="Print Preview" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
